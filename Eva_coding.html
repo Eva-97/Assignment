@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eva Assignment2</title>
+    </head>
+    <body>
+    <script type="text/javascript"/>
+    //"simple interest"
+        var bankA= {
+        pc:100000,
+        in:0.1,
+        rt:2/12,
+        }
+        //"compound interest"
+        var bankB={
+        in:0.025,
+        }
+        
+        var interestBankA= bankA.pc*bankA.in*bankA.rt
+        var interestBankB=bankA.pc * [(1+bankB.in)**bankA.rt -1]
+        
+        console.log("Monthly interest for Bank A is:",interestBankA)
+        console.log("Monthly interest for Bank B is:",interestBankB)
+       
+        var bankDiff=interestBankA-interestBankB;
+        
+        console.log("The differennce between Bank A and B is:",bankDiff)
+        if (interestBankA > interestBankB)
+        { alert("Mr.Joe, I will advise you to go for Bank B which has a smaller monthly interest.")
+        } 
+        else {
+       alert("Mr. Joe,I will advise you to go for Bank A")
+        }
+        
+        </script> 
+    </body>
+</html>
